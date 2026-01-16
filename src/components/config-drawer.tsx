@@ -335,13 +335,13 @@ function DirConfig() {
               <IconDir dir='ltr' {...props} />
             ),
           },
-          {
-            value: 'rtl',
-            label: 'Right to Left',
-            icon: (props: SVGProps<SVGSVGElement>) => (
-              <IconDir dir='rtl' {...props} />
-            ),
-          },
+          // {
+          //   value: 'rtl',
+          //   label: 'Right to Left',
+          //   icon: (props: SVGProps<SVGSVGElement>) => (
+          //     <IconDir dir='rtl' {...props} />
+          //   ),
+          // },
         ].map((item) => (
           <RadioGroupItem key={item.value} item={item} />
         ))}
