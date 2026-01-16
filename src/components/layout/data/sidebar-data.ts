@@ -42,114 +42,115 @@ export const sidebarData: SidebarData = {
       title: 'General',
       items: [
         {
-          title: 'Maintenance Tab',
+          title: 'Dashboard',
           url: '/',
           icon: LayoutDashboard,
         },
         {
-          title: 'Manage User',
+          title: 'Tasks',
           url: '/tasks',
           icon: ListTodo,
         },
         {
-          title: 'Manage Security',
+          title: 'Apps  ',
           url: '/apps',
           icon: Package,
         },
         {
-          title: 'View Audit Logs',
+          title: 'Chats',
           url: '/chats',
           icon: MessagesSquare,
         },
         {
-          title: 'Manage Variables',
+          title: 'Users',
           url: '/users',
           icon: Users,
         },
+        
+        //change this to root route as /maintenance-tab --> /
+        {
+          title: 'Maintenance Tab',
+          url: '/maintenance-tab',
+          icon: LayoutDashboard,
+        },
+         {
+          title: 'Manage User',
+          url: '/manage-user',
+          icon: ListTodo,
+        },
+         {
+          title: 'Manage Security',
+          url: '/manage-security',
+          icon: Package,
+        },
+        {
+          title: 'View Audit Logs',
+          url: '/view-audit-logs',
+          icon: MessagesSquare,
+        },
+         {
+          title: 'Manage Variables',
+          url: '/manage-variables',
+          icon: Users,
+        }
       ],
     },
-    {
+    // {
+    //   title: 'AI Powered ',
+    //   items: [
+    //     {
+    //       title: 'Auth',
+    //       icon: ShieldCheck,
+    //       items: [
+    //         {
+    //           title: 'Sign In',
+    //           url: '/sign-in',
+    //         },
+    //         {
+    //           title: 'Sign In (2 Col)',
+    //           url: '/sign-in-2',
+    //         },
+    //         {
+    //           title: 'Sign Up',
+    //           url: '/sign-up',
+    //         },
+    //         {
+    //           title: 'Forgot Password',
+    //           url: '/forgot-password',
+    //         },
+    //         {
+    //           title: 'OTP',
+    //           url: '/otp',
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+  {
       title: 'AI Powered ',
       items: [
         {
-          title: 'Auth',
+          title: 'AI Dashboard',
           icon: ShieldCheck,
           items: [
             {
-              title: 'Sign In',
-              url: '/sign-in',
-            },
-            {
-              title: 'Sign In (2 Col)',
-              url: '/sign-in-2',
-            },
-            {
-              title: 'Sign Up',
-              url: '/sign-up',
-            },
-            {
-              title: 'Forgot Password',
-              url: '/forgot-password',
-            },
-            {
-              title: 'OTP',
-              url: '/otp',
-            },
-          ],
-        },
-        {
-          title: 'Errors',
-          icon: Bug,
-          items: [
-            {
-              title: 'Unauthorized',
-              url: '/errors/unauthorized',
-              icon: Lock,
-            },
-            {
-              title: 'Forbidden',
-              url: '/errors/forbidden',
-              icon: UserX,
-            },
-            {
-              title: 'Not Found',
-              url: '/errors/not-found',
-              icon: FileX,
-            },
-            {
-              title: 'Internal Server Error',
-              url: '/errors/internal-server-error',
-              icon: ServerOff,
-            },
-            {
-              title: 'Maintenance Error',
-              url: '/errors/maintenance-error',
-              icon: Construction,
-            },
-          ],
-        },
-      ],
-    },
-      {
-      title: 'Other',
-      items: [
-        {
-          title: 'Settings',
-          icon: Settings,
-          items: [
-            {
-              title: 'Profile',
-              url: '/settings',
+              title: 'Job Manager',
+              url: '/ai-dashboard/job-manager',
               icon: UserCog,
             },
             {
-              title: 'Account',
-              url: '/settings/account',
+              title: 'Run Dashboard',
+              url: '/ai-dashboard/run-dashboard',
               icon: Wrench,
             },
             {
-              title: 'Appearance',
-              url: '/settings/appearance',
+              title: 'System Overview',
+              url: '/ai-dashboard/system-overview',
+              icon: Palette,
+            },
+            {
+              title: 'Workspace',
+              url: '/ai-dashboard/workspace',
               icon: Palette,
             },
             
