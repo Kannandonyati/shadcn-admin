@@ -1,19 +1,12 @@
 import {
   Construction,
   LayoutDashboard,
-  Monitor,
   Bug,
   ListTodo,
   FileX,
-  HelpCircle,
   Lock,
-  Bell,
   Package,
-  Palette,
   ServerOff,
-  Settings,
-  Wrench,
-  UserCog,
   UserX,
   Users,
   MessagesSquare,
@@ -21,8 +14,14 @@ import {
   AudioWaveform,
   Command,
   GalleryVerticalEnd,
+  HelpCircle,
+  Monitor,
+  Bell,
+  Palette,
+  Wrench,
+  UserCog,
+  Settings,
 } from 'lucide-react'
-import { ClerkLogo } from '@/assets/clerk-logo'
 import { type SidebarData } from '../types'
 
 export const sidebarData: SidebarData = {
@@ -33,73 +32,44 @@ export const sidebarData: SidebarData = {
   },
   teams: [
     {
-      name: 'Shadcn Admin',
+      name: 'Dart',
       logo: Command,
       plan: 'Vite + ShadcnUI',
-    },
-    {
-      name: 'Acme Inc',
-      logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
-    },
-    {
-      name: 'Acme Corp.',
-      logo: AudioWaveform,
-      plan: 'Startup',
-    },
+    }
   ],
   navGroups: [
     {
       title: 'General',
       items: [
         {
-          title: 'Dashboard',
+          title: 'Maintenance Tab',
           url: '/',
           icon: LayoutDashboard,
         },
         {
-          title: 'Tasks',
+          title: 'Manage User',
           url: '/tasks',
           icon: ListTodo,
         },
         {
-          title: 'Apps',
+          title: 'Manage Security',
           url: '/apps',
           icon: Package,
         },
         {
-          title: 'Chats',
+          title: 'View Audit Logs',
           url: '/chats',
-          badge: '3',
           icon: MessagesSquare,
         },
         {
-          title: 'Users',
+          title: 'Manage Variables',
           url: '/users',
           icon: Users,
-        },
-        {
-          title: 'Secured by Clerk',
-          icon: ClerkLogo,
-          items: [
-            {
-              title: 'Sign In',
-              url: '/clerk/sign-in',
-            },
-            {
-              title: 'Sign Up',
-              url: '/clerk/sign-up',
-            },
-            {
-              title: 'User Management',
-              url: '/clerk/user-management',
-            },
-          ],
         },
       ],
     },
     {
-      title: 'Pages',
+      title: 'AI Powered ',
       items: [
         {
           title: 'Auth',
@@ -160,7 +130,7 @@ export const sidebarData: SidebarData = {
         },
       ],
     },
-    {
+      {
       title: 'Other',
       items: [
         {
@@ -182,23 +152,10 @@ export const sidebarData: SidebarData = {
               url: '/settings/appearance',
               icon: Palette,
             },
-            {
-              title: 'Notifications',
-              url: '/settings/notifications',
-              icon: Bell,
-            },
-            {
-              title: 'Display',
-              url: '/settings/display',
-              icon: Monitor,
-            },
+            
           ],
         },
-        {
-          title: 'Help Center',
-          url: '/help-center',
-          icon: HelpCircle,
-        },
+        
       ],
     },
   ],
